@@ -13,114 +13,124 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <section aria-labelledby="about-heading">
             <article>
-                <h1>About Me</h1>
+                <h1 id="about-heading">About Me</h1>
                 <p>Hello! I'm Alexander Robin Jonsson. I am a front-end developer with a background in graphic design and electromechanical engineering.</p>
-    
                 <p>I specialize in building user interfaces that are visually compelling and engineered for precision and reliability.</p>
-    
                 <p>My journey into the digital world began with a <strong>three-year education in graphic design</strong>, where I developed a keen eye for aesthetics, branding, and user-centric communication. While I loved shaping the visual experience, I was driven to bring these designs to life with interactivity and function. This ambition led me to pursue a comprehensive <strong>diploma in Full Stack Development</strong>.</p>
-    
                 <p>I undertook this program while working as an <strong>Electromechanical Technician</strong>. This parallel experience was invaluable, as my daily work with technical machines and schematics grounded my web development studies in the principles of engineering and systematic problem-solving.</p>
-    
                 <p>Having explored full stack, I realized that my passions for design and function converge most powerfully in front-end development. I completed the <strong>Frontend Developer React</strong> program in Borås (Sweden) to master modern client-side technologies. Today, I leverage this blended background to create web solutions that are thoughtfully designed, structurally sound, and built to perform.</p>
             </article>
         </section>
 
-        <section>
-            <h2>Technical Skills</h2>
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
             <p>Here are some of the technologies I've been working with:</p>
-            <div>
-                <div>
-                    <h3>Languages</h3>
+            <div class="skills-grid">
+                <section aria-labelledby="languages-heading">
+                    <h3 id="languages-heading">Languages</h3>
                     <ul>
                         <li>
-                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                            <span class="sr-only">HTML</span>
                             HTML
                         </li>
                         <li>
-                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                            <span class="sr-only">CSS</span>
                             CSS
                         </li>
                         <li>
-                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-js" aria-hidden="true"></i>
+                            <span class="sr-only">JavaScript (ES6+)</span>
                             JavaScript (ES6+)
                         </li>
                         <li>
-                            <i class="fa-solid fa-file-code"></i>
+                            <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+                            <span class="sr-only">TypeScript</span>
                             TypeScript
                         </li>
                     </ul>
-                </div>
+                </section>
 
-                <div>
-                    <h3>Frameworks / Libraries</h3>
+                <section aria-labelledby="frameworks-heading">
+                    <h3 id="frameworks-heading">Frameworks / Libraries</h3>
                     <ul>
                         <li>
-                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-react" aria-hidden="true"></i>
+                            <span class="sr-only">React</span>
                             React
                         </li>
                         <li>
-                            <i class="fa-brands fa-node-js"></i>
+                            <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+                            <span class="sr-only">Node.js</span>
                             Node.js
                         </li>
                     </ul>
-                </div>
+                </section>
 
-                <div>
-                    <h3>Tools & Platforms</h3>
+                <section aria-labelledby="tools-heading">
+                    <h3 id="tools-heading">Tools &amp; Platforms</h3>
                     <ul>
                         <li>
-                            <i class="fa-brands fa-git"></i>
+                            <i class="fa-brands fa-git" aria-hidden="true"></i>
+                            <span class="sr-only">Git</span>
                             Git
                         </li>
                         <li>
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
                             GitHub
                         </li>
                         <li>
-                            <i class="fa-solid fa-code"></i>
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            <span class="sr-only">VS Code</span>
                             VS Code
                         </li>
                         <li>
-                            <i class="fa-brands fa-npm"></i>
+                            <i class="fa-brands fa-npm" aria-hidden="true"></i>
+                            <span class="sr-only">npm</span>
                             npm
                         </li>
                     </ul>
-                </div>
+                </section>
 
-                <div>
-                    <h3>Databases</h3>
+                <section aria-labelledby="databases-heading">
+                    <h3 id="databases-heading">Databases</h3>
                     <ul>
                         <li>
-                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-solid fa-database" aria-hidden="true"></i>
+                            <span class="sr-only">MongoDB</span>
                             MongoDB
                         </li>
                     </ul>
-                </div>
+                </section>
             </div>
         </section>
 
-        <section>
-            <h2>My Resume</h2>
+        <section aria-labelledby="resume-heading">
+            <h2 id="resume-heading">My Resume</h2>
             <p>For a more detailed look at my professional experience, projects, and education, please feel free to download a copy of my resume.</p>
-            <!-- Update CV file in the future -->
-            <a href="assets/files/Alexander Robin Jonsson CV.pdf" download>Download CV (PDF)</a>
+            <a href="assets/files/Alexander Robin Jonsson CV.pdf" download aria-label="Download Alexander Robin Jonsson's CV as PDF">Download CV (PDF)</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Alexander Robin Jonsson. All rights reserved.</p>
+        <p>
+            <span aria-label="Copyright">&copy;</span> 2025 Alexander Robin Jonsson. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
