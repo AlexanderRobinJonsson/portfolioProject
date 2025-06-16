@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
-/* Set a base font and background */
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Set a base font and background, hide scrollbar for IE, Edge and Firefox */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
     color: #222;
     line-height: 1.6;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* Remove list styles */
@@ -28,4 +35,16 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.mainNavigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigationList {
+    display: flex;
+    gap: 16px;
+    padding: 16px 24px;
 }
