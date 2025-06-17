@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation" class="mainNavigation">
-            <ul class="navigationList">
+    <header id="navHeader">
+        <nav aria-label="Main navigation">
+            <ul class="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -27,7 +27,7 @@
         <section aria-labelledby="send-message-heading">
             <h2 id="send-message-heading">Send a Message</h2>
             <form action="" method="POST" aria-describedby="contact-form-desc">
-                <p id="contact-form-desc" class="sr-only">All fields are required.</p>
+                <p id="contact-form-desc">All fields are required.</p>
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required autocomplete="name">

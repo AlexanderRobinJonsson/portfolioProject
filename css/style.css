@@ -17,6 +17,34 @@ body {
     line-height: 1.6;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+main {
+    flex: 1; /* Allow main to grow and take up remaining space */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it stays on top */
 }
 
 /* Remove list styles */
@@ -37,14 +65,58 @@ img {
     display: block;
 }
 
-.mainNavigation {
+/* Basic styling for the navbar */
+#navHeader {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text */
+    padding: 1rem 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Make it sticky */
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure it stays on top of other content */
+    border-bottom: 1px solid #e1e1e1; /* Light gray border */
 }
 
-.navigationList {
-    display: flex;
-    gap: 16px;
-    padding: 16px 24px;
+/* Style the logo or brand */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
+/* Style the navigation links */
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navLinks a {
+    color: #333; /* Dark gray text */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #777; /* Medium gray on hover */
+}
+
+/* Add a shadow for better visibility */
+#navHeader {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Adjust styling for smaller screens */
+/* @media (max-width: 768px) {
+    #navHeader {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+} */
